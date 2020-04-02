@@ -1,0 +1,222 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  --main-color:#667ACD;
+  --secondary-color:#66CDA0;
+  scroll-behavior: smooth;
+}
+#navbar{
+  /* background: #F6F6F6; */
+  color: var(--main-color);
+  background: white;
+}
+i .fas fa-bars{
+  color: var(--main-color);
+}
+#logo{
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 22px;
+}
+#navbarNav a {
+  color: var(--main-color);
+  font-weight: 300;
+  font-size: 15px;
+  text-decoration: none;
+  position: relative;
+}
+#navbarNav a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid var(--secondary-color);
+  transition: 0.4s;
+}
+#navbarNav a:hover:after {
+  width: 100%;
+}
+/* main section */
+#mainSection{
+  height: 100%;
+}
+#mainSection .col-md-6:first-child{
+  margin-top: 140px;
+  width: 812px;
+  padding-top: 100px;
+  margin: auto;
+}
+#mainSection .col-md-6 p{
+  font-size: 1.25rem;
+  font-weight: 300;
+  /* font-size: medium;
+  font-weight: 620;
+  line-height: 1.8; */
+  letter-spacing: 0.8px;
+  color: var(--main-color);
+}
+#mainSection .col-md-6 input{
+  padding: 15px;
+  height: 30px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 20px;
+  color: var(--main-color);
+}
+input:focus{
+  outline:none;
+}
+#mainSection .col-md-6 input::placeholder{
+  color: var(--main-color);
+  font-weight: 300;
+  font-size: 15px;
+}
+.bt{
+  font-weight: 300;
+  height: 34px;
+  width: 7em;
+  margin-left: 10px;
+  border: none;
+  border-radius: 20px;
+  color:white;
+  background-color: var(--secondary-color);
+  outline: none !important;
+}
+.bt:hover{
+  box-shadow: 5px 5px 10px #8F8F8F; 
+  /* box-shadow: 5px 5px 10px var(--secondary-color);  */
+}
+#travelImg{
+  margin-top: 70px;
+}
+#mainSection a:last-child{
+  margin-left: 48%;
+}
+
+/* image gallery */
+#gallery{
+  margin-bottom: 45px;
+}
+.title::before{
+  content:'';
+  background:var(--secondary-color);
+  height: 5px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translatey(63px);
+}
+.title::after{
+  content:'';
+  background:var(--secondary-color);
+  height: 10px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  display: block;
+  transform: translatey(8px);
+}
+#gallery h1{
+  color: var(--main-color);
+  margin-bottom: 5px;
+}
+.shadowHover{
+  transition: 0.05s ease-in;
+  border: none;
+}
+.shado{
+  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+  box-shadow:1rem 1rem 1.5rem rgba(0,0,0,.25)!important;
+  top:5px;
+}
+
+/* info */
+#info{
+  margin: 2rem 0;
+}
+#info p{
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* book */
+#book{  
+  /* background: linear-gradient(to right, #348f50, #56b4d3); */
+  background: linear-gradient(to right,rgb(52,143,80),rgb(86,180,211));
+  padding: 15px;  
+}
+#book h2{
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+#book button{
+  margin: 0 auto;
+  padding: 5px;
+}
+#book button:hover{
+  margin: 0 auto;
+  padding: 5px;
+  box-shadow: none;
+}
+
+/* footer */
+footer{
+  padding: 15px;
+  margin-top: 2rem;
+  background: #2A354F;
+  color: white;
+}
+#b_logo{
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 22px;
+}
+footer .col-md-9{
+  margin-top: -10px;
+}
+footer i{
+  margin-left: 7px;
+}
+
+/* container media queries */
+.contain{
+  width:100%;
+  padding-right:15px;
+  padding-left:15px;
+  margin-right:auto;
+  margin-left:auto
+}
+@media (min-width:576px){
+  .contain{
+    max-width:540px
+  }
+}
+@media (min-width:768px){
+  .contain{
+    max-width:720px
+  }
+    /* add space to the top of subscribe buton */
+    #mainSection .col-md-6 button{
+      margin-top: 0.5rem;
+      margin-left:0rem;
+    }
+}
+@media (min-width:992px){
+  .contain{
+    max-width:960px
+  }
+  #mainSection .col-md-6:first-child{
+    background-image: url("/images/Group\ 4.png");
+    background-repeat:no-repeat;
+    background-position: top right;
+  }
+}
+@media (min-width:1200px){
+  .contain{
+    max-width:1300px
+  }
+}

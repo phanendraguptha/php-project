@@ -1,0 +1,77 @@
+body{
+  margin: 0;
+  padding: 0;
+  --main-color:#667ACD;
+  --secondary-color:#66CDA0;
+  font-family: 'Montserrat', sans-serif;
+}
+/* navbar */
+#navbar{
+  /* background: #F6F6F6; */
+  color: var(--main-color);
+  background: white;
+}
+i .fas fa-bars{
+  color: var(--main-color);
+}
+#logo{
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 22px;
+}
+#navbarNav a {
+  color: var(--main-color);
+  font-weight: 300;
+  font-size: 15px;
+  text-decoration: none;
+  position: relative;
+}
+/* main area */
+.signincontainer{
+  margin: auto;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.form{
+ width: 70%;
+ margin: auto;
+}
+.form h1{
+  color: var(--main-color);
+}
+.form label{
+  color: var(--main-color);
+}
+.img img{
+  object-fit: fill;
+}
+/* form styling */
+#input{
+  padding: 15px;
+  height: 30px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 20px;
+  color: var(--main-color);
+}
+#input::placeholder{
+  color: var(--main-color);
+  font-weight: 300;
+  font-size: 15px;
+}
+#bt{
+  font-weight: 300;
+  border-radius: 20px;
+  color:white;
+  background-color: var(--secondary-color);
+}
+
+@media (max-width:768px){
+  .img{
+    display: none;
+  }
+  .signincontainer{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
